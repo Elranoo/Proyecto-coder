@@ -44,8 +44,38 @@
     text-align: center;
 }
 
-.backround-menuburger {
+.background-menuburger {
     background: url('../assets/img/menuwallpaper2.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.background-equipoburger {
+    background: url('../assets/img/equipowallpaper.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.background-servicios {
+    background: url('../assets/img/servicioswallpaper.jpg') no-repeat center center/cover;
+    height: 100vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.background-contacto {
+    background: url('../assets/img/contactowallpaper.jpg') no-repeat center center/cover;
     height: 100vh; 
     display: flex;
     align-items: center;
@@ -171,5 +201,33 @@
     line-height: 1.6;
 }
 
+/* Equipo */
+.team-img {
+    width: 150px;
+    height: 150px;
+}
+
+.join-team {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.join-team h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.join-team p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.join-team .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    color: white;
+}
 
 
