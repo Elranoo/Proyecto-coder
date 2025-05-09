@@ -74,8 +74,8 @@
     text-align: center;
 }
 
-.background-contacto {
-    background: url('../assets/img/contactowallpaper.jpg') no-repeat center center/cover;
+.background-nosotros {
+    background: url('../assets/img/nosotroswallpaper.jpg') no-repeat center center/cover;
     height: 100vh; 
     display: flex;
     align-items: center;
@@ -231,3 +231,48 @@
 }
 
 /* Servicios */
+.service-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+}
+
+.services h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-top: 15px;
+}
+
+.services p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.benefit-card {
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
+
+.benefit-card:hover {
+    transform: translateY(-4px); 
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); 
+}
+
+.benefit-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.benefit-text {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
