@@ -281,8 +281,19 @@
 }
 
 @media (max-width: 768px) {
-
     .benefit-card {
         margin: 15px 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .benefit-card {
+        height: 100%; 
+    }
+
+    .card-body {
+        display: flex;
+        flex-direction: column; 
+        justify-content: space-between; 
     }
 }
