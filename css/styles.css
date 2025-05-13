@@ -278,7 +278,8 @@
 }
 
 @media (max-width: 768px) {
+
     .benefit-card {
-        margin: 15px 0; /* Añade espacio entre las tarjetas */
+        margin: 15px 0;
     }
 }
