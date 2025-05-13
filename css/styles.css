@@ -276,3 +276,9 @@
     color: #555;
     line-height: 1.6;
 }
+
+@media (max-width: 768px) {
+    .benefit-card {
+        margin: 15px 0; /* Añade espacio entre las tarjetas */
+    }
+}
