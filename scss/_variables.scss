@@ -1,0 +1,43 @@
+// =======================
+// Variables y Mixins 
+// =======================
+
+$primary-color: #ff0000;
+$secondary-color: #007bff;
+$text-dark: #333;
+$text-medium: #555;
+$white: #fff;
+$shadow-1: 0 4px 8px rgba(0, 0, 0, 0.1);
+$shadow-2: 0 8px 16px rgba(0, 0, 0, 0.2);
+$shadow-3: 0 4px 6px rgba(0, 0, 0, 0.3);
+$radius: 10px;
+$transition: 0.3s ease;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin background-img($url) {
+    background: url($url) no-repeat center center/cover;
+    height: 100vh;
+    @include flex-center;
+    color: $white;
+    text-align: center;
+}
+
+@mixin card-shadow($shadow) {
+    box-shadow: $shadow;
+}
+
+%title-style {
+    font-weight: bold;
+    color: $text-dark;
+}
+
+%text-style {
+    font-size: 1rem;
+    color: $text-medium;
+    line-height: 1.6;
+}

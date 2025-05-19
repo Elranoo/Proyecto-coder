@@ -1,0 +1,30 @@
+// =======================
+// Página: Equipo
+// =======================
+
+.background-equipoburger {
+    @include background-img('../assets/img/equipowallpaper.jpg');
+}
+.team-img {
+    width: 150px;
+    height: 150px;
+}
+.join-team {
+    padding: 20px;
+    border-radius: $radius;
+    h2 {
+        font-size: 2rem;
+        color: $text-dark;
+    }
+    p {
+        font-size: 1.2rem;
+        color: $text-medium;
+    }
+    .btn-primary {
+        background-color: $secondary-color;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.1rem;
+        color: $white;
+    }
+}

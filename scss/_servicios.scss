@@ -1,0 +1,42 @@
+// =======================
+// Página: Servicios
+// =======================
+
+.background-servicios {
+    @include background-img('../assets/img/servicioswallpaper.jpg');
+}
+.service-img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 8px;
+    @include card-shadow(0 4px 6px rgba(0, 0, 0, 0.1));
+    margin: 20px;
+}
+.services {
+    h3 {
+        font-size: 1.5rem;
+        @extend %title-style;
+        margin-top: 15px;
+    }
+    p {
+        @extend %text-style;
+    }
+}
+.benefit-card {
+    border-radius: $radius;
+    transition: transform $transition, box-shadow $transition;
+    margin-top: 20px;
+    margin-bottom: -40px;
+    &:hover {
+        transform: translateY(-4px);
+        @include card-shadow(0 8px 12px rgba(0, 0, 0, 0.2));
+    }
+}
+.benefit-title {
+    font-size: 1.5rem;
+    @extend %title-style;
+    margin-bottom: 10px;
+}
+.benefit-text {
+    @extend %text-style;
+}

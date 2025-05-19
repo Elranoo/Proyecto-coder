@@ -1,0 +1,39 @@
+// =======================
+// Página: Menú
+// =======================
+
+.background-menuburger {
+    @include background-img('../assets/img/menuwallpaper2.jpg');
+}
+.menu-catalog {
+    margin-top: 40px;
+}
+.card {
+    border: none;
+    border-radius: $radius;
+    @include card-shadow($shadow-1);
+    transition: transform $transition, box-shadow $transition;
+    text-align: center;
+    &:hover {
+        transform: translateY(-5px);
+        @include card-shadow($shadow-2);
+    }
+    &-img-top {
+        height: auto;
+        max-height: 200px;
+        object-fit: contain;
+    }
+    &-price {
+        font-size: 1.2rem;
+        color: rgb(1, 141, 1);
+        font-weight: bold;
+    }
+    &-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        color: $text-dark;
+    }
+    &-text {
+        @extend %text-style;
+    }
+}
