@@ -1,4 +1,5 @@
-.welcome-title, .locations h2, .contact h2, .locations h3, .locations .contact h3, .services h3, .benefit-title, .background-image h1 {
+.welcome-title, .locations h2, .contact h2, .locations h3, .locations .contact h3, .services h3, .benefit-title, .background-image .overlay h1,
+.background-image .overlay .display-4 {
   font-weight: bold;
   color: #333;
 }
@@ -72,17 +73,19 @@
   justify-content: center;
   flex-direction: column;
 }
-.background-image h1 {
+.background-image .overlay h1,
+.background-image .overlay .display-4 {
   font-size: 4rem;
   margin-bottom: 10px;
   text-shadow: #000 3px 3px 5px;
+  color: #fff !important;
 }
-.background-image p {
+.background-image .overlay p {
   font-size: 2rem;
   margin: 0;
   text-shadow: #000 3px 3px 5px;
 }
-.background-image .btn {
+.background-image .overlay .btn {
   background-color: #ff0000;
   color: #fff;
   font-size: 1rem;
@@ -93,22 +96,11 @@
   transition: transform 0.3s ease;
   box-shadow: 0 3px 5px rgb(0, 0, 0);
 }
-.background-image .btn:hover {
+.background-image .overlay .btn:hover {
   transform: scale(1.05);
 }
-.background-image .btn:active {
+.background-image .overlay .btn:active {
   background-color: #ff0000;
-}
-
-.background-image .overlay h1,
-.background-image .overlay .display-4 {
-  color: #fff !important;
-}
-
-.info-title::before {
-  content: attr(data-icon);
-  font-size: 1.8rem;
-  margin-right: 8px;
 }
 
 .info-box {
@@ -117,14 +109,17 @@
   padding: 20px;
   text-align: center;
 }
-
-.info-title {
+.info-box .info-title {
   font-size: 1.5rem;
   font-weight: bold;
   color: #333;
 }
-
-.info-text {
+.info-box .info-title::before {
+  content: attr(data-icon);
+  font-size: 1.8rem;
+  margin-right: 8px;
+}
+.info-box .info-text {
   font-size: 1rem;
   color: #555;
   line-height: 1.6;

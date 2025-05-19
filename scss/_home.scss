@@ -19,12 +19,12 @@
     }
     .navbar-nav {
         .nav-link {
-        margin-right: 20px;
-        color: $white;
-        padding: 8px 12px;
+            margin-right: 20px;
+            color: $white;
+            padding: 8px 12px;
             &:hover {
                 font-weight: bold;
-        }
+            }
         }
     }
 }
@@ -38,71 +38,77 @@
     padding: 10px;
 }
 
+// =======================
+// Imagen de fondo principal
+// =======================
 .background-image {
     @include background-img('../assets/img/burgerwallpaper2.jpg');
-        .overlay {
-            background-color: rgba(0, 0, 0, 0.4);
-            width: 100%;
-            height: 100%;
-                @include flex-center;
-                    flex-direction: column;
-    }
-    h1 {
-        font-size: 4rem;
-        @extend %title-style;
-        margin-bottom: 10px;
-        text-shadow: #000 3px 3px 5px;
-    }
-    p {
-        font-size: 2rem;
-        margin: 0;
-        text-shadow: #000 3px 3px 5px;
-    }
-    .btn {
-        background-color: $primary-color;
-        color: $white;
-        font-size: 1rem;
-        font-weight: bold;
-        border-radius: 25px;
-        padding: 10px 20px;
-        margin-top: auto;
-        transition: transform $transition;
-        @include card-shadow(0 3px 5px rgba(0, 0, 0, 1));
-        &:hover {
-            transform: scale(1.05);
-    }
-    &:active {
-        background-color: $primary-color;
-    }
+    .overlay {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 100%;
+        height: 100%;
+        @include flex-center;
+        flex-direction: column;
+
+        h1,
+        .display-4 {
+            font-size: 4rem;
+            @extend %title-style;
+            margin-bottom: 10px;
+            text-shadow: #000 3px 3px 5px;
+            color: $white !important;
+        }
+
+        p {
+            font-size: 2rem;
+            margin: 0;
+            text-shadow: #000 3px 3px 5px;
+        }
+
+        .btn {
+            background-color: $primary-color;
+            color: $white;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 25px;
+            padding: 10px 20px;
+            margin-top: auto;
+            transition: transform $transition;
+            @include card-shadow(0 3px 5px rgba(0, 0, 0, 1));
+            &:hover {
+                transform: scale(1.05);
+            }
+            &:active {
+                background-color: $primary-color;
+            }
+        }
     }
 }
 
-.background-image .overlay h1,
-.background-image .overlay .display-4 {
-    color: #fff !important;
-}
-
-.info-title::before {
-    content: attr(data-icon);
-    font-size: 1.8rem;
-    margin-right: 8px;
-}
-
+// =======================
+// Sección info
+// =======================
 .info-box {
     background-color: $white;
     border-radius: $radius;
     padding: 20px;
     text-align: center;
-}
 
-.info-title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: $text-dark;
-}
+    .info-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: $text-dark;
 
-.info-text {
-    font-size: 1rem;
-    color: $text-medium;
-    line-height: 1.6;
+        &::before {
+            content: attr(data-icon);
+            font-size: 1.8rem;
+            margin-right: 8px;
+        }
+    }
+
+    .info-text {
+        font-size: 1rem;
+        color: $text-medium;
+        line-height: 1.6;
+    }
 }
