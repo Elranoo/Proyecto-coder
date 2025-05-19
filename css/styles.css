@@ -280,9 +280,63 @@
     line-height: 1.6;
 }
 
+/* Nosotros */
+.welcome-title, .locations h2, .contact h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.locations h3, .contact h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.locations p, .contact p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+}
+
+.locations .col-md-4, .contact .col-md-6 {
+    background-color: #ffffff;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.location-map {
+    width: 100%;
+    height: 200px;
+    border: 0;
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); 
+}
+
+.contact p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.contact .d-flex {
+    gap: 20px; 
+}
+
 @media (max-width: 768px) {
     .benefit-card {
         margin: 15px 0;
+    }
+
+    .locations .row {
+        gap: 20px;
+    }
+
+    .location-map {
+        width: 90%; 
+        height: 250px; 
     }
 }
 
@@ -297,3 +351,4 @@
         justify-content: space-between; 
     }
 }
+
