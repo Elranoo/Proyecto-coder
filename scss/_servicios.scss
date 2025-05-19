@@ -2,6 +2,10 @@
 // Página: Servicios
 // =======================
 
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'globals' as *;
+
 .background-servicios {
     @include background-img('../assets/img/servicioswallpaper.jpg');
 }

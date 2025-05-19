@@ -2,6 +2,10 @@
 // Página: Nosotros
 // =======================
 
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'globals' as *;
+
 .background-nosotros {
     @include background-img('../assets/img/nosotroswallpaper.jpg');
 }

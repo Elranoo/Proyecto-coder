@@ -1,0 +1,12 @@
+@use 'variables' as *;
+
+%title-style {
+    font-weight: bold;
+    color: $text-dark;
+}
+
+%text-style {
+    font-size: 1rem;
+    color: $text-medium;
+    line-height: 1.6;
+}

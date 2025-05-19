@@ -2,6 +2,10 @@
 // Página: Home
 // =======================
 
+@use 'variables' as *;
+@use 'mixins' as *;
+@use 'globals' as *;
+
 .main-container {
     @include flex-center;
     flex-direction: column;
