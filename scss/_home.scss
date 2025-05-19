@@ -38,9 +38,7 @@
     padding: 10px;
 }
 
-// =======================
-// Imagen de fondo principal
-// =======================
+
 .background-image {
     @include background-img('../assets/img/burgerwallpaper2.jpg');
     .overlay {
@@ -85,9 +83,6 @@
     }
 }
 
-// =======================
-// Sección info
-// =======================
 .info-box {
     background-color: $white;
     border-radius: $radius;
