@@ -76,3 +76,33 @@
     }
     }
 }
+
+.background-image .overlay h1,
+.background-image .overlay .display-4 {
+    color: #fff !important;
+}
+
+.info-title::before {
+    content: attr(data-icon);
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.info-box {
+    background-color: $white;
+    border-radius: $radius;
+    padding: 20px;
+    text-align: center;
+}
+
+.info-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: $text-dark;
+}
+
+.info-text {
+    font-size: 1rem;
+    color: $text-medium;
+    line-height: 1.6;
+}
