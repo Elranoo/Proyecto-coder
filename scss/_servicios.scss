@@ -27,15 +27,12 @@
     }
 }
 .benefit-card {
-    border-radius: $radius;
-    transition: transform $transition, box-shadow $transition;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     margin-top: 20px;
-    margin-bottom: -40px;
-    &:hover {
-        transform: translateY(-4px);
-        @include card-shadow(0 8px 12px rgba(0, 0, 0, 0.2));
-    }
+    margin-bottom: 20px; 
 }
+
 .benefit-title {
     font-size: 1.5rem;
     @extend %title-style;
